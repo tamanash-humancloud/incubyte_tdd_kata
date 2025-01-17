@@ -1,0 +1,82 @@
+.App {
+    width: 100vw;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 50px auto;
+    background: rgb(151,151,159);
+    background: linear-gradient(332deg, rgba(151,151,159,1) 0%, rgba(140,140,140,1) 51%, rgba(255,255,255,1) 100%); 
+}
+
+.display {
+    border: 2px solid black;
+    background: white;
+    height: 50px;
+    border-radius: 15px;
+    width: 90%;
+    padding: 10px;
+    text-align: end;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 26px;
+    border-radius: 5px;
+}
+
+.button-wrapper {
+    display: flex;
+    flex: row;
+    margin: 10px auto;
+}
+
+.button-wrapper>div {
+    margin: 6px;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.last-input {
+    grid-column: 1 / span 3;
+}
+
+.action-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.operator {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.utility {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.bg-success {
+    background-color: rgb(46, 182, 46);
+    color: white;
+}
+
+.bg-danger {
+    background-color: rgb(212, 20, 20);
+    color: white;
+}
